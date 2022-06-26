@@ -1,0 +1,29 @@
+# https://squidfunk.github.io/mkdocs-material/
+
+site_name: PSAR Data
+
+theme:
+  name: material
+  primary: indigo
+  accent: teal
+  features:
+    - navigation.sections
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+          - name: mermaid
+            class: mermaid
+            format: !!python/name:pymdownx.superfences.fence_code_format ''
+  - mdx_include:
+      base_path: docs
+
+nav:
+  - Home: 'index.md'
+  - Events:
+    - 'New Fundraiser': 'events/new_fundraiser.md'
+    - 'New Meeting': 'events/new_meeting.md'
+    - 'New Member Application': 'events/new_member_application.md'
+    - 'New Mission': 'events/new_mission.md'
+    - 'New SAREX': 'events/new_sarex.md'
+    - 'New Training': 'events/new_training.md'
