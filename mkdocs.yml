@@ -1,6 +1,7 @@
 # https://squidfunk.github.io/mkdocs-material/
 
 site_name: PSAR Data
+site_url: https://briancohan.com/psar-data/
 
 theme:
   name: material

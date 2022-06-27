@@ -1,2 +1,2 @@
 new_training_event>New Training]
-click new_training_event "/events/new_training"
+click new_training_event "/psar-data/events/new_training"
