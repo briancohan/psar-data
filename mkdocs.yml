@@ -37,3 +37,5 @@ theme:
   - navigation.sections
   name: material
   primary: indigo
+watch:
+- components
