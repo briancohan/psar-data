@@ -4,17 +4,19 @@ hide:
 ## Legend
 ```mermaid
 flowchart TB
-    {! parts/styles.md !}
-    a>Initiating Event]
-    b[Individual]:::member
-    c[\Form/]:::form
-    d[(Spreadsheet)]:::spreadsheet
+    {! styles.md !}
+    a>Event]
+    b[\Form/]:::form
+    c[(Sheet)]:::spreadsheet
+    d[Individual]:::member
 ```
+Click on an event, form, or sheet to see all workflows associated with that item.
+
 ## Data Flow
 ```mermaid
 flowchart LR
-    {! parts/styles.md !}
-    {! parts/all_nodes.md !}
+    {! styles.md !}
+    {! all_nodes.md !}
 
     subgraph new_event[New Event]
         new_fundraiser_form
@@ -24,10 +26,10 @@ flowchart LR
         new_training_form
     end
 
-    {! parts/flows/member_application_flow.md !}
-    {! parts/flows/new_fundraiser_flow.md !}
-    {! parts/flows/new_meeting_flow.md !}
-    {! parts/flows/new_mission_flow.md !}
-    {! parts/flows/new_sarex_flow.md !}
-    {! parts/flows/new_training_flow.md !}
+    {! flows/member_application_flow.md !}
+    {! flows/new_fundraiser_flow.md !}
+    {! flows/new_meeting_flow.md !}
+    {! flows/new_mission_flow.md !}
+    {! flows/new_sarex_flow.md !}
+    {! flows/new_training_flow.md !}
 ```
