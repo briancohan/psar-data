@@ -65,7 +65,18 @@ def update_config(nav: defaultdict, config_file: Path = CONFIG_YML):
     config_file.write_text(yaml.dump(config))
 
 
+def update_all_flows():
+    content = "\n".join([
+        f"{{! {flow.relative_to(COMPONENTS_DIR)} !}}"
+        for flow in flows_list('-')
+    ])
+    output_file = COMPONENTS_DIR / 'all_flows.md'
+    output_file.touch(exist_ok=True)
+    output_file.write_text(content)
+
 def main():
+    update_all_flows()
+
     nav = defaultdict(list)
     for component_type in ["events", "forms", "sheets"]:
         output_dir = ensure_output_directory(component_type)

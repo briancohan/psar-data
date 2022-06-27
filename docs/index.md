@@ -17,7 +17,7 @@ Click on an event, form, or sheet to see all workflows associated with that item
 ```mermaid
 flowchart LR
     {! styles.md !}
-    {! all_nodes.md !}
+    {! all_flows.md !}
 
     subgraph new_event[New Event]
         new_fundraiser_form
@@ -41,11 +41,4 @@ flowchart LR
         new_fundraiser_event
         new_meeting_event
     end
-
-    {! flows/member_application_flow.md !}
-    {! flows/new_fundraiser_flow.md !}
-    {! flows/new_meeting_flow.md !}
-    {! flows/new_mission_flow.md !}
-    {! flows/new_sarex_flow.md !}
-    {! flows/new_training_flow.md !}
 ```
