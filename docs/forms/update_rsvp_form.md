@@ -9,3 +9,4 @@ flowchart LR
 {! flows/new_meeting_flow.md !}
 {! flows/new_fundraiser_flow.md !}
 ```
+{! forms/details/update_rsvp_form.md !}

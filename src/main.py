@@ -31,7 +31,7 @@ def flows_list(search_string: str) -> list[Path]:
     return [
         file
         for file in COMPONENTS_DIR.joinpath("flows").iterdir()
-        if search_string in file.read_text()
+        if file.is_file() and search_string in file.read_text()
     ]
 
 
@@ -66,13 +66,13 @@ def update_config(nav: defaultdict, config_file: Path = CONFIG_YML):
 
 
 def update_all_flows():
-    content = "\n".join([
-        f"{{! {flow.relative_to(COMPONENTS_DIR)} !}}"
-        for flow in flows_list('-')
-    ])
-    output_file = COMPONENTS_DIR / 'all_flows.md'
+    content = "\n".join(
+        [f"{{! {flow.relative_to(COMPONENTS_DIR)} !}}" for flow in flows_list("!")]
+    )
+    output_file = COMPONENTS_DIR / "all_flows.md"
     output_file.touch(exist_ok=True)
     output_file.write_text(content)
+
 
 def main():
     update_all_flows()
@@ -85,7 +85,14 @@ def main():
             output_file = output_dir / file.name
             output_file.touch(exist_ok=True)
 
-            output_file.write_text(page_content(flows_list(file.stem)))
+            details_file = COMPONENTS_DIR / component_type / "details" / file.name
+            if not details_file.exists():
+                details_file.touch()
+
+            content = page_content(flows_list(file.stem))
+            content += f"{{! {details_file.relative_to(COMPONENTS_DIR)} !}}"
+
+            output_file.write_text(content)
 
             nav[component_type].append(output_file)
 

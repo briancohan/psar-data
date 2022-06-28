@@ -9,6 +9,8 @@ markdown_extensions:
 nav:
 - Home: index.md
 - events:
+  - Certification Event: events/certification_event.md
+  - Course Completion Event: events/course_completion_event.md
   - Member Application Event: events/member_application_event.md
   - New Fundraiser Event: events/new_fundraiser_event.md
   - New Meeting Event: events/new_meeting_event.md
@@ -16,6 +18,8 @@ nav:
   - New Sarex Event: events/new_sarex_event.md
   - New Training Event: events/new_training_event.md
 - forms:
+  - Certification Form: forms/certification_form.md
+  - Course Completion Form: forms/course_completion_form.md
   - Enter Contact Info Form: forms/enter_contact_info_form.md
   - Enter Task Form: forms/enter_task_form.md
   - New Fundraiser Form: forms/new_fundraiser_form.md
@@ -26,6 +30,8 @@ nav:
   - Update Dispatch Form: forms/update_dispatch_form.md
   - Update Rsvp Form: forms/update_rsvp_form.md
 - sheets:
+  - Certification Sheet: sheets/certification_sheet.md
+  - Completed Courses Sheet: sheets/completed_courses_sheet.md
   - Contact Info Sheet: sheets/contact_info_sheet.md
   - Event Log Sheet: sheets/event_log_sheet.md
   - Task Log Sheet: sheets/task_log_sheet.md

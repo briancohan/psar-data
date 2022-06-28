@@ -10,3 +10,4 @@ flowchart LR
 {! flows/new_meeting_flow.md !}
 {! flows/new_fundraiser_flow.md !}
 ```
+{! sheets/details/event_log_sheet.md !}

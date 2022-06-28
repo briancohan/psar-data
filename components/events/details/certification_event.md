@@ -1,0 +1,27 @@
+Member Completed a Certification
+
+- Basics
+    - First Aid
+    - CPR
+    - Body Fluid Exposure Prevention
+    - Wilderness First Aid
+    - Wilderness First Responder
+    - EMT-B
+    - EMT-I
+    - EMT-P
+    - CPR Instructor
+    - WFA Instructor
+- VDEM
+    - Call Out Qualified
+    - Search Team Member
+    - Search Team Leader
+    - Management Team Member
+    - Management Team Leader
+    - Operational Tracker
+    - Tracking Technician
+    - Tracking Specialist
+    - Search Mission Coordinator
+    - Operational Equine Unit
+    - ETE
+    - STI
+    - MTI
